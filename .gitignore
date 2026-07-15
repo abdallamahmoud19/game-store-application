@@ -1,7 +1,7 @@
 
 #ignoring .idea file
 .idea
-/resources/*
+
 
 # Compiled class file
 *.class
