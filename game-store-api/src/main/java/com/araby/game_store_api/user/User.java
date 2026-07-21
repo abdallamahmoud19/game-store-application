@@ -2,8 +2,7 @@ package com.araby.game_store_api.user;
 
 
 import com.araby.game_store_api.common.BaseEntity;
-import com.araby.game_store_api.game.Game;
-import com.araby.game_store_api.gamerequest.GameRequest;
+import com.araby.game_store_api.gamerequest.GameRequestEntity;
 import com.araby.game_store_api.notification.Notification;
 import com.araby.game_store_api.wishlist.WishList;
 import jakarta.persistence.*;
@@ -34,5 +33,5 @@ public class User extends BaseEntity {
     private List<Notification> notifications;
 
     @OneToMany(mappedBy = "user")
-    private List<GameRequest> gameRequests;
+    private List<GameRequestEntity> gameRequestEntities;
 }
